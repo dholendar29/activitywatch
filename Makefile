@@ -11,7 +11,7 @@
 
 SHELL := /usr/bin/env bash
 
-SUBMODULES := aw-core aw-client aw-qt aw-server aw-watcher-afk aw-watcher-window aw-watcher-zoom
+SUBMODULES := aw-core aw-client aw-qt aw-server aw-watcher-afk aw-watcher-window
 
 # Include extras if AW_EXTRAS is true
 ifeq ($(AW_EXTRAS),true)
@@ -86,7 +86,6 @@ lint:
 		aw-server/aw_server/ \
 		aw-watcher-window/aw_watcher_window/ \
 		aw-watcher-afk/aw_watcher_afk/ \
-		aw-watcher-zoom/aw_watcher_zoom/ \
 		aw-qt/aw_qt/
 
 # Uninstall
