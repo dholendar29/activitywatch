@@ -84,6 +84,7 @@ aw_qt_a = Analysis(
         (aw_qt_location / "resources/aw-qt.desktop", "aw_qt/resources"),
         (aw_qt_location / "media", "aw_qt/media"),
         (os.path.join(spec_dir, "libcrypto-1_1-x64.dll"), '.'),
+        (os.path.join(spec_dir, "sqlcipher.dll"), '.'),
     ]
     + ([(aw_server_rust_webui, "aw_server_rust/static")] if not skip_rust else []),
     hiddenimports=[],
